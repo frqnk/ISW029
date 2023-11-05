@@ -8,13 +8,13 @@
     }
 
     fwrite($handle, "Conteúdo\n");
-    fflush($handle);
+    fflush($handle); // salva as mudanças no arquivo
     fclose($handle);
 
     $handle = fopen("teste.txt", "r");
     while(!feof($handle)) {
-        $line = fgets($handle);
-        echo $line."<br>";
+        $line = fgets($handle); // pega o conteúdo da linha
+        echo $line."<br>"; // e mostra
     }
     fclose($handle);
 ?>

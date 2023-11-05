@@ -13,5 +13,5 @@
 
     var_dump($array);
 
-    print($array['teste']."<br/>");
+    print($array['teste'].'<br/>'.PHP_EOL);
 ?>

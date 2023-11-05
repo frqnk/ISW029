@@ -14,7 +14,6 @@
             </label>
             <input type="text" id="senha" name="senha">
             <br>
-            <br>
             <input type="submit" value="Enviar">
         </form>
     </body>

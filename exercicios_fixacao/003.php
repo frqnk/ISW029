@@ -8,11 +8,6 @@
     $a = "10";
     $b = "1";
 
-    if($a > $b) {
-        print((int) $a);
-    }
-
-    if($b > $a) {
-        print((int) $b);
-    }
+    if($a > $b) print((int) $a);
+    if($b > $a) print((int) $b);
 ?>

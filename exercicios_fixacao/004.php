@@ -8,15 +8,7 @@
     $b = 1;
     $c = 40;
 
-    if($a > $b && $a > $c) {
-        print($a);
-    }
-
-    if($b > $a && $b > $c) {
-        print($b);
-    }
-
-    if($c > $a && $c > $b) {
-        print($c);
-    }
+    if($a > $b && $a > $c) print($a);
+    if($b > $a && $b > $c) print($b);
+    if($c > $a && $c > $b) print($c);
 ?>

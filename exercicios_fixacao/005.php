@@ -8,17 +8,11 @@
     $b = 1;
     $c = 40;
 
-    if($a > $b && $a > $c) {
-        print($a);
-    }
+    if($a > $b && $a > $c) print($a);
     else {
-        if($b > $a && $b > $c) {
-            print($b);
-        }
+        if($b > $a && $b > $c) print($b);
         else {
-            if($c > $a && $c > $b) {
-                print($c);
-            }
+            if($c > $a && $c > $b) print($c);
         }
     }
 ?>

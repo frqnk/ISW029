@@ -16,6 +16,8 @@
     ];
 
     foreach($array as $value) {
-        print($value.'<br>'.PHP_EOL);
+        if(gettype($value) == 'integer') {
+            print($value.'<br>'.PHP_EOL);
+        }
     }
 ?>
