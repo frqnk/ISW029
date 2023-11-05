@@ -2,3 +2,6 @@
 	path = avaliacao1/FATEC_DES_WEB2_2023_Avaliacao1
 	url = https://github.com/frqnk/FATEC_DES_WEB2_2023_Avaliacao1.git
 	branch = main
+[submodule "avaliacao2/FATEC_DES_WEB2_2023_Avaliacao2"]
+	path = avaliacao2/FATEC_DES_WEB2_2023_Avaliacao2
+	url = https://github.com/frqnk/FATEC_DES_WEB2_2023_Avaliacao2
