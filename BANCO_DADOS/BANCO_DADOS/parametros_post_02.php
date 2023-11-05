@@ -9,22 +9,39 @@
     </head>
     <body>
         <?php
-            function validar_post($dado_enviado) {
-                if(isset($dado_enviado) and $dado_enviado <> "") {
-                    return TRUE;
-                }
-                return FALSE;
+            require_once('dados_banco.php');
+
+            try {
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            }
+            catch(PDOException $e) {
+                echo $sql."<br>".$e->getMessage();
             }
 
-            if(validar_post($_POST['firstName']) and validar_post($_POST['lastName'])) {
-                echo '<br><br>';
-                echo 'Nome: '.$_POST['firstName'];
-                echo '<br><br>';
-                echo 'Sobrenome: '.$_POST['lastName'];
-                /*
-                Inserir os dados no banco de dados MySQL
-                */
+            function validar_post($dado_enviado) {
+                if(isset($dado_enviado) and $dado_enviado != "") {
+                    return true;
+                }
+                else {
+                    return false;
+                }
             }
+
+            $fN = $_POST['firstName'];
+            $lN = $_POST['lastName'];
+
+            if(validar_post($fN) and validar_post($lN)) {
+                header('location: parametros_post_01.php');
+                $sql = "INSERT INTO authors (firstname, lastname) VALUES ('$fN', '$lN')";
+                $conn->exec($sql);
+                // echo 'Nome: '.$fN.'<br>';
+                // echo '<br>';
+                // echo 'Sobrenome: '.$lN.'<br>';
+                // echo '<br>';
+            }
+
+            $conn = null;
         ?>
     </body>
 </html>

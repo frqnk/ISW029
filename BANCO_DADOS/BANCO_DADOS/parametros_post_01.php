@@ -10,7 +10,7 @@
     <body>
         <form action="parametros_post_02.php" method="post">
             <label for="firstName">
-                Primeiro Nome:
+                Nome:
             </label>
             <input type="text" id="firstName" name="firstName">
             <br>
@@ -23,5 +23,11 @@
             <br>
             <input type="submit" value="Enviar">
         </form>
+        <?php
+            // echo 'Nome: '.'<br>'
+            // echo '<br>';
+            // echo 'Sobrenome: '.'<br>';
+            // echo '<br>';
+        ?>
     </body>
 </html>
