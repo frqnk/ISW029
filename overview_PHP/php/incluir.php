@@ -1,7 +1,4 @@
 <?php
-
-include 'tools.php';
-
-echo quadrado(4);
-
+    include 'tools.php';
+    echo quadrado(4);
 ?>

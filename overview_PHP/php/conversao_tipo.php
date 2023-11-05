@@ -1,6 +1,5 @@
 <?php
-
-var_dump('teste'. 5);
-echo '<br>';
-var_dump('5'+'10');
+    var_dump('teste'. 5);
+    echo '<br>';
+    var_dump('5'+'10');
 ?>
