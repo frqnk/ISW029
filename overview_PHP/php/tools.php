@@ -1,6 +1,6 @@
 <?php
 
-function quadrado($numero){
+function quadrado($numero) {
     return $numero * $numero;
 }
 

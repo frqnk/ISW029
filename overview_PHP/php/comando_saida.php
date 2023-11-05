@@ -1,8 +1,14 @@
+<html>
+    <body>
+        <h2>
+            Oi, mundo
+        </h2>
+    </body>
+</hmtl>
+
 <?php
 # Comentário
-
 // Comentário também
-
 /*
 Comentários com múltiplas linhas
 Neste código, observamos os comandos
@@ -10,7 +16,6 @@ Neste código, observamos os comandos
 - print
 - var_dump
 - print_r
-
 */
 
 echo 'a'.'<br>'.PHP_EOL;
