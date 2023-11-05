@@ -13,5 +13,5 @@
 
     var_dump($array);
 
-    array('teste');
+    print($array['teste']."<br/>");
 ?>

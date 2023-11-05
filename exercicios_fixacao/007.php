@@ -15,7 +15,7 @@
         "n4" => 'oi mundo',
     ];
 
-    foreach($array as $key => $value) {
-        print($key.'<br>'.PHP_EOL);
+    foreach($array as $value) {
+        print($value.'<br>'.PHP_EOL);
     }
 ?>

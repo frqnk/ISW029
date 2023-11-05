@@ -29,10 +29,8 @@
             </h1>
         </div>
         <p>
-            <!--
             <a href="cadastro.php" class="btn btn-primary">Cadastro Pessoas</a>
             <br><br>
-            -->
             <a href="logout.php" class="btn btn-danger">
                 Sair da conta
             </a>
